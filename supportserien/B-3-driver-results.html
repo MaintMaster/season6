@@ -1,0 +1,632 @@
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/animation.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/w3.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="icon" href="./assets/maintmaster.png">
+</head>
+
+<body style="background-image: linear-gradient(#00b1b1, #39d7d7); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
+<head>
+	<title>
+		Supportserien |
+			driver B
+	</title>
+</head>
+
+<div class="w3-top">
+	<div class="w3-bar w3-black" style="text-align:center;">
+        <div class="logo w3-dropdown-hover w3-hide-small w3-hide-medium" style="background-color: #0000">
+            <a href="/index.html">
+                <img src="./assets/maintmaster.png">
+            </a>
+            <div class="w3-dropdown-content w3-bar-block w3-card-4 w3-hide-small w3-hide-medium">
+                <span class="w3-bar-item">---serier---</span>
+                    <a href="/" class="w3-bar-item w3-button ">MaintMaster</a>
+                    <a href="/enhetscupen" class="w3-bar-item w3-button ">Enhetscupen</a>
+                    <a href="/supercupen" class="w3-bar-item w3-button ">Supercupen</a>
+                <span class="w3-bar-item">---historiska---</span>
+                    <a href="/season5" class="w3-bar-item w3-button ">MaintMaster s5</a>
+                    <a href="/season5/enhetscupen" class="w3-bar-item w3-button ">Enhetscupen s5</a>
+                    <a href="/season5/supercupen" class="w3-bar-item w3-button ">Supercupen s5</a>
+            </div>
+        </div>
+
+		<div class="w3-dropdown-hover w3-hide-small w3-hide-medium">
+			<button class="w3-button">Poängställning</button>
+			<div class="w3-dropdown-content w3-bar-block w3-card-4 w3-hide-small w3-hide-medium">
+				<a href="./A-driver-standings.html" class="w3-bar-item w3-button ">A</a>
+				<a href="./B-driver-standings.html" class="w3-bar-item w3-button active">B</a>
+				<a href="./C-driver-standings.html" class="w3-bar-item w3-button ">C</a>
+				<a href="./overall-driver-standings.html" class="w3-bar-item w3-button ">Total</a>
+			</div>
+		</div>
+
+		<div class="w3-dropdown-hover w3-hide-small w3-hide-medium">
+			<button class="w3-button">Teammästerskap</button>
+			<div class="w3-dropdown-content w3-bar-block w3-card-4 w3-hide-small w3-hide-medium">
+				<a href="./A-team-standings.html" class="w3-bar-item w3-button ">A</a>
+				<a href="./B-team-standings.html" class="w3-bar-item w3-button ">B</a>
+				<a href="./C-team-standings.html" class="w3-bar-item w3-button ">C</a>
+				<a href="./overall-team-standings.html" class="w3-bar-item w3-button ">Total</a>
+			</div>
+		</div>
+
+
+
+        <!-- mobile stuff -->
+        <a href="javascript:void(0)" class="logo w3-left w3-hide-large" style="font-size:3em;" onclick="openSeriesMobileNav()">
+            <img src="./assets/maintmaster.png" style="max-height: 1em;margin: 0.1em;border: 1px solid darkgray">
+        </a>
+
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large" style="font-size:3em;" onclick="openMobileNav()">&#9776;
+        </a>
+
+        <h3 class="w3-hide-large navTitle bold" style="display:block;">
+            driver - B
+            
+        </h3>
+
+	</div>
+
+	<div id="mobileNav" class="w3-bar-block w3-black w3-hide w3-hide-large" style="overflow-y:scroll;max-height:95vh;">
+            <a href="./A-driver-standings.html" class="w3-bar-item w3-button ">Poängställning - A</a>
+            <a href="./B-driver-standings.html" class="w3-bar-item w3-button active">Poängställning - B</a>
+            <a href="./C-driver-standings.html" class="w3-bar-item w3-button ">Poängställning - C</a>
+            <a href="./overall-driver-standings.html" class="w3-bar-item w3-button ">Poängställning - Total</a>
+            <a href="./A-team-standings.html" class="w3-bar-item w3-button ">Teammästerskap - A</a>
+            <a href="./B-team-standings.html" class="w3-bar-item w3-button ">Teammästerskap - B</a>
+            <a href="./C-team-standings.html" class="w3-bar-item w3-button ">Teammästerskap - C</a>
+            <a href="./overall-team-standings.html" class="w3-bar-item w3-button ">Teammästerskap - Total</a>
+	</div>
+
+	<div id="seriesMobileNav" class="w3-bar-block w3-black w3-hide w3-hide-large" style="overflow-y:scroll;max-height:95vh;">
+            <span class="w3-bar-item">---series---</span>
+                <a href="/" class="w3-bar-item w3-button ">MaintMaster</a>
+                <a href="/enhetscupen" class="w3-bar-item w3-button ">Enhetscupen</a>
+                <a href="/supercupen" class="w3-bar-item w3-button ">Supercupen</a>
+            <span class="w3-bar-item">---historical---</span>
+                <a href="/season5" class="w3-bar-item w3-button ">MaintMaster s5</a>
+                <a href="/season5/enhetscupen" class="w3-bar-item w3-button ">Enhetscupen s5</a>
+                <a href="/season5/supercupen" class="w3-bar-item w3-button ">Supercupen s5</a>
+	</div>
+
+	<div class="w3-bar w3-light-grey secondaryNav">
+			<a href="./B-0-driver-results.html">
+				<img src="./assets/country-flags/welsh.png" />
+			</a>
+			<a href="./B-1-driver-results.html">
+				<img src="./assets/country-flags/esp.png" />
+			</a>
+			<a href="./B-2-driver-results.html">
+				<img src="./assets/country-flags/aus.png" />
+			</a>
+			<a href="./B-3-driver-results.html">
+				<img src="./assets/country-flags/swe.png" />
+			</a>
+			<a href="./B-4-driver-results.html">
+				<img src="./assets/country-flags/usa.png" />
+			</a>
+			<a href="./B-5-driver-results.html">
+				<img src="./assets/country-flags/deu.png" />
+			</a>
+			<a href="./B-6-driver-results.html">
+				<img src="./assets/country-flags/grc.png" />
+			</a>
+			<a href="./B-7-driver-results.html">
+				<img src="./assets/country-flags/arg.png" />
+			</a>
+	</div>
+</div>
+
+<div id="container">
+    <div id="flexContainer">
+        <div class="flexBox">
+            <div style="margin-bottom: 1em;" class="w3-hide-medium w3-hide-small">
+                <div class="logo" style="display:flex;">
+                    <img src="./assets/maintmaster.png" />
+                    <h2 style="margin-left:1em;">B Sweden Resultat</h2>
+                </div>
+            </div>
+
+            <table id="tableDrivers">
+                <thead>
+                <tr>
+                    <th>Pos</th>
+                    <th>Nat</th>
+                    <th>Förare</th>
+                            <th>Team</th>
+                        <th>Bil</th>
+                    <td>PS</td>
+                    <td>Diff</td>
+                    <td>Total</td>
+                    <td>Diff</td>
+                        <td>PS Poäng</td>
+                    <td>Poäng</td>
+                    <td>Totalpoäng</td>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>
+                            <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
+                        </td>
+                        <td class="text-left bold">Martin Zirnsack</td>
+                                <td>
+                                    <img src="./assets/teams/Castrol Team Sweden.png" style="max-width:2em; max-height:2em;" alt="Castrol Team Sweden" title="Castrol Team Sweden"/>
+                                </td>
+                                <td>
+                                    <img src="./assets/cars/volkswagen.png" style="max-width:2em; max-height:2em;" alt="volkswagen" title="volkswagen"/>
+                                </td>
+                        <td>03:21.025</td>
+                        <td>--</td>
+                        <td>32:26.219</td>
+                        <td>--</td>
+                            <td>5</td>
+                        <td>30</td>
+                        <td class="bold">35</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>
+                            <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
+                        </td>
+                        <td class="text-left bold">Pierre Andersson</td>
+                                <td>
+                                    <img src="./assets/teams/privateer.png" style="max-width:2em; max-height:2em;" alt="privateer" title="privateer"/>
+                                </td>
+                                <td>
+                                    <img src="./assets/cars/volkswagen.png" style="max-width:2em; max-height:2em;" alt="volkswagen" title="volkswagen"/>
+                                </td>
+                        <td>03:28.524</td>
+                        <td>+00:00:07.499</td>
+                        <td>33:06.899</td>
+                        <td>+00:00:40.680</td>
+                            <td>2</td>
+                        <td>27</td>
+                        <td class="bold">29</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>
+                            <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
+                        </td>
+                        <td class="text-left bold">Staffan Magnusson</td>
+                                <td>
+                                    <img src="./assets/teams/privateer.png" style="max-width:2em; max-height:2em;" alt="privateer" title="privateer"/>
+                                </td>
+                                <td>
+                                    <img src="./assets/cars/volkswagen.png" style="max-width:2em; max-height:2em;" alt="volkswagen" title="volkswagen"/>
+                                </td>
+                        <td>03:25.791</td>
+                        <td>+00:00:04.766</td>
+                        <td>33:12.150</td>
+                        <td>+00:00:45.931</td>
+                            <td>4</td>
+                        <td>25</td>
+                        <td class="bold">29</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>
+                            <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
+                        </td>
+                        <td class="text-left bold">Björn Hvit</td>
+                                <td>
+                                    <img src="./assets/teams/Castrol Rally Team.png" style="max-width:2em; max-height:2em;" alt="Castrol Rally Team" title="Castrol Rally Team"/>
+                                </td>
+                                <td>
+                                    <img src="./assets/cars/volkswagen.png" style="max-width:2em; max-height:2em;" alt="volkswagen" title="volkswagen"/>
+                                </td>
+                        <td>03:30.891</td>
+                        <td>+00:00:09.866</td>
+                        <td>33:27.699</td>
+                        <td>+00:01:01.480</td>
+                            <td></td>
+                        <td>24</td>
+                        <td class="bold">24</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>
+                            <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
+                        </td>
+                        <td class="text-left bold">Fredrik Eklöf</td>
+                                <td>
+                                    <img src="./assets/teams/Castrol Team Wermland.png" style="max-width:2em; max-height:2em;" alt="Castrol Team Wermland" title="Castrol Team Wermland"/>
+                                </td>
+                                <td>
+                                    <img src="./assets/cars/volkswagen.png" style="max-width:2em; max-height:2em;" alt="volkswagen" title="volkswagen"/>
+                                </td>
+                        <td>03:42.924</td>
+                        <td>+00:00:21.899</td>
+                        <td>33:28.219</td>
+                        <td>+00:01:02.000</td>
+                            <td></td>
+                        <td>23</td>
+                        <td class="bold">23</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>
+                            <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
+                        </td>
+                        <td class="text-left bold">Mattias Lagerqvist</td>
+                                <td>
+                                    <img src="./assets/teams/Kapow Racing Finland.png" style="max-width:2em; max-height:2em;" alt="Kapow Racing Finland" title="Kapow Racing Finland"/>
+                                </td>
+                                <td>
+                                    <img src="./assets/cars/peugot.png" style="max-width:2em; max-height:2em;" alt="peugot" title="peugot"/>
+                                </td>
+                        <td>03:27.291</td>
+                        <td>+00:00:06.266</td>
+                        <td>33:31.399</td>
+                        <td>+00:01:05.180</td>
+                            <td>3</td>
+                        <td>21</td>
+                        <td class="bold">24</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>
+                            <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
+                        </td>
+                        <td class="text-left bold">Tomas Eriksson</td>
+                                <td>
+                                    <img src="./assets/teams/Castrol Rally Team.png" style="max-width:2em; max-height:2em;" alt="Castrol Rally Team" title="Castrol Rally Team"/>
+                                </td>
+                                <td>
+                                    <img src="./assets/cars/opel.png" style="max-width:2em; max-height:2em;" alt="opel" title="opel"/>
+                                </td>
+                        <td>03:33.574</td>
+                        <td>+00:00:12.549</td>
+                        <td>34:36.797</td>
+                        <td>+00:02:10.578</td>
+                            <td></td>
+                        <td>19</td>
+                        <td class="bold">19</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>
+                            <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
+                        </td>
+                        <td class="text-left bold">Jonas Otterwall</td>
+                                <td>
+                                    <img src="./assets/teams/privateer.png" style="max-width:2em; max-height:2em;" alt="privateer" title="privateer"/>
+                                </td>
+                                <td>
+                                    <img src="./assets/cars/opel.png" style="max-width:2em; max-height:2em;" alt="opel" title="opel"/>
+                                </td>
+                        <td>03:30.341</td>
+                        <td>+00:00:09.316</td>
+                        <td>34:39.881</td>
+                        <td>+00:02:13.662</td>
+                            <td>1</td>
+                        <td>17</td>
+                        <td class="bold">18</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>
+                            <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
+                        </td>
+                        <td class="text-left bold">Thomasstriden</td>
+                                <td>
+                                    <img src="./assets/teams/privateer.png" style="max-width:2em; max-height:2em;" alt="privateer" title="privateer"/>
+                                </td>
+                                <td>
+                                    <img src="./assets/cars/opel.png" style="max-width:2em; max-height:2em;" alt="opel" title="opel"/>
+                                </td>
+                        <td>03:32.508</td>
+                        <td>+00:00:11.483</td>
+                        <td>35:06.031</td>
+                        <td>+00:02:39.812</td>
+                            <td></td>
+                        <td>15</td>
+                        <td class="bold">15</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>
+                            <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
+                        </td>
+                        <td class="text-left bold">Jörgen Jakobsson</td>
+                                <td>
+                                    <img src="./assets/teams/privateer.png" style="max-width:2em; max-height:2em;" alt="privateer" title="privateer"/>
+                                </td>
+                                <td>
+                                    <img src="./assets/cars/ford.png" style="max-width:2em; max-height:2em;" alt="ford" title="ford"/>
+                                </td>
+                        <td>03:34.358</td>
+                        <td>+00:00:13.333</td>
+                        <td>35:16.679</td>
+                        <td>+00:02:50.460</td>
+                            <td></td>
+                        <td>13</td>
+                        <td class="bold">13</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>
+                            <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
+                        </td>
+                        <td class="text-left bold">Stefan Magnusson</td>
+                                <td>
+                                    <img src="./assets/teams/Castrol Team Sweden.png" style="max-width:2em; max-height:2em;" alt="Castrol Team Sweden" title="Castrol Team Sweden"/>
+                                </td>
+                                <td>
+                                    <img src="./assets/cars/peugot.png" style="max-width:2em; max-height:2em;" alt="peugot" title="peugot"/>
+                                </td>
+                        <td>15:00.000</td>
+                        <td>+00:11:38.975</td>
+                        <td>01:08:42.674</td>
+                        <td>+00:36:16.455</td>
+                            <td></td>
+                        <td></td>
+                        <td class="bold">DNF</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>
+                            <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
+                        </td>
+                        <td class="text-left bold">Peter Dahlström</td>
+                                <td>
+                                    <img src="./assets/teams/privateer.png" style="max-width:2em; max-height:2em;" alt="privateer" title="privateer"/>
+                                </td>
+                                <td>
+                                    <img src="./assets/cars/opel.png" style="max-width:2em; max-height:2em;" alt="opel" title="opel"/>
+                                </td>
+                        <td>15:00.000</td>
+                        <td>+00:11:38.975</td>
+                        <td>02:18:01.492</td>
+                        <td>+01:45:35.273</td>
+                            <td></td>
+                        <td></td>
+                        <td class="bold">DNF</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>
+                            <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
+                        </td>
+                        <td class="text-left bold">Jesper Fröjd</td>
+                                <td>
+                                    <img src="./assets/teams/Kapow Racing Sverige.png" style="max-width:2em; max-height:2em;" alt="Kapow Racing Sverige" title="Kapow Racing Sverige"/>
+                                </td>
+                                <td>
+                                    <img src="./assets/cars/volkswagen.png" style="max-width:2em; max-height:2em;" alt="volkswagen" title="volkswagen"/>
+                                </td>
+                        <td>15:00:00.000</td>
+                        <td>N/A</td>
+                        <td>23:59:59.000</td>
+                        <td>N/A</td>
+                            <td></td>
+                        <td></td>
+                        <td class="bold">DNS</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>
+                            <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
+                        </td>
+                        <td class="text-left bold">Hans-Daniel Steiner</td>
+                                <td>
+                                    <img src="./assets/teams/privateer.png" style="max-width:2em; max-height:2em;" alt="privateer" title="privateer"/>
+                                </td>
+                                <td>
+                                    <img src="./assets/cars/volkswagen.png" style="max-width:2em; max-height:2em;" alt="volkswagen" title="volkswagen"/>
+                                </td>
+                        <td>15:00:00.000</td>
+                        <td>N/A</td>
+                        <td>23:59:59.000</td>
+                        <td>N/A</td>
+                            <td></td>
+                        <td></td>
+                        <td class="bold">DNF</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>
+                            <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
+                        </td>
+                        <td class="text-left bold">Andreas Persson</td>
+                                <td>
+                                    <img src="./assets/teams/Kapow Racing Sverige.png" style="max-width:2em; max-height:2em;" alt="Kapow Racing Sverige" title="Kapow Racing Sverige"/>
+                                </td>
+                                <td>
+                                    <img src="./assets/cars/volkswagen.png" style="max-width:2em; max-height:2em;" alt="volkswagen" title="volkswagen"/>
+                                </td>
+                        <td>15:00:00.000</td>
+                        <td>N/A</td>
+                        <td>23:59:59.000</td>
+                        <td>N/A</td>
+                            <td></td>
+                        <td></td>
+                        <td class="bold">DNS</td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <td>
+                            <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
+                        </td>
+                        <td class="text-left bold">Jonas Lund</td>
+                                <td>
+                                    <img src="./assets/teams/Castrol Team Wermland.png" style="max-width:2em; max-height:2em;" alt="Castrol Team Wermland" title="Castrol Team Wermland"/>
+                                </td>
+                                <td>
+                                    <img src="./assets/cars/fiat.png" style="max-width:2em; max-height:2em;" alt="fiat" title="fiat"/>
+                                </td>
+                        <td>15:00:00.000</td>
+                        <td>N/A</td>
+                        <td>23:59:59.000</td>
+                        <td>N/A</td>
+                            <td></td>
+                        <td></td>
+                        <td class="bold">DNS</td>
+                    </tr>
+                    <tr>
+                        <td>17</td>
+                        <td>
+                            <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
+                        </td>
+                        <td class="text-left bold">Ingemar Allerdahl</td>
+                                <td>
+                                    <img src="./assets/teams/unknown.png" style="max-width:2em; max-height:2em;" alt="Team Alfa" title="Team Alfa"/>
+                                </td>
+                                <td>
+                                    <img src="./assets/cars/ford.png" style="max-width:2em; max-height:2em;" alt="ford" title="ford"/>
+                                </td>
+                        <td>15:00:00.000</td>
+                        <td>N/A</td>
+                        <td>23:59:59.000</td>
+                        <td>N/A</td>
+                            <td></td>
+                        <td></td>
+                        <td class="bold">DNS</td>
+                    </tr>
+                    <tr>
+                        <td>18</td>
+                        <td>
+                            <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
+                        </td>
+                        <td class="text-left bold">Robert Johnson</td>
+                                <td>
+                                    <img src="./assets/teams/privateer.png" style="max-width:2em; max-height:2em;" alt="privateer" title="privateer"/>
+                                </td>
+                                <td>
+                                    <img src="./assets/cars/opel.png" style="max-width:2em; max-height:2em;" alt="opel" title="opel"/>
+                                </td>
+                        <td>15:00:00.000</td>
+                        <td>N/A</td>
+                        <td>23:59:59.000</td>
+                        <td>N/A</td>
+                            <td></td>
+                        <td></td>
+                        <td class="bold">DNS</td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td>
+                            <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
+                        </td>
+                        <td class="text-left bold">Pierre Tillaeus</td>
+                                <td>
+                                    <img src="./assets/teams/Castrol Rally Team.png" style="max-width:2em; max-height:2em;" alt="Castrol Rally Team" title="Castrol Rally Team"/>
+                                </td>
+                                <td>
+                                    <img src="./assets/cars/opel.png" style="max-width:2em; max-height:2em;" alt="opel" title="opel"/>
+                                </td>
+                        <td>15:00:00.000</td>
+                        <td>N/A</td>
+                        <td>23:59:59.000</td>
+                        <td>N/A</td>
+                            <td></td>
+                        <td></td>
+                        <td class="bold">DNS</td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td>
+                            <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
+                        </td>
+                        <td class="text-left bold">Mikael Bylund</td>
+                                <td>
+                                    <img src="./assets/teams/unknown.png" style="max-width:2em; max-height:2em;" alt="Team Alfa" title="Team Alfa"/>
+                                </td>
+                                <td>
+                                    <img src="./assets/cars/ford.png" style="max-width:2em; max-height:2em;" alt="ford" title="ford"/>
+                                </td>
+                        <td>15:00:00.000</td>
+                        <td>N/A</td>
+                        <td>23:59:59.000</td>
+                        <td>N/A</td>
+                            <td></td>
+                        <td></td>
+                        <td class="bold">DNS</td>
+                    </tr>
+                    <tr>
+                        <td>21</td>
+                        <td>
+                            <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
+                        </td>
+                        <td class="text-left bold">Henrik Janson</td>
+                                <td>
+                                    <img src="./assets/teams/Castrol Team Sweden.png" style="max-width:2em; max-height:2em;" alt="Castrol Team Sweden" title="Castrol Team Sweden"/>
+                                </td>
+                                <td>
+                                    <img src="./assets/cars/fiat.png" style="max-width:2em; max-height:2em;" alt="fiat" title="fiat"/>
+                                </td>
+                        <td>15:00:00.000</td>
+                        <td>N/A</td>
+                        <td>23:59:59.000</td>
+                        <td>N/A</td>
+                            <td></td>
+                        <td></td>
+                        <td class="bold">DNS</td>
+                    </tr>
+                    <tr>
+                        <td>22</td>
+                        <td>
+                            <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
+                        </td>
+                        <td class="text-left bold">Peter Friman</td>
+                                <td>
+                                    <img src="./assets/teams/privateer.png" style="max-width:2em; max-height:2em;" alt="privateer" title="privateer"/>
+                                </td>
+                                <td>
+                                    <img src="./assets/cars/ford.png" style="max-width:2em; max-height:2em;" alt="ford" title="ford"/>
+                                </td>
+                        <td>15:00:00.000</td>
+                        <td>N/A</td>
+                        <td>23:59:59.000</td>
+                        <td>N/A</td>
+                            <td></td>
+                        <td></td>
+                        <td class="bold">DNS</td>
+                    </tr>
+                </tbody>
+
+            </table>
+            <div style="margin:0 auto; text-align:center;">
+                <p>Senast uppdaterad vid: 2023-02-13T08:10:19Z</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function openMobileNav() {
+        closeNav("seriesMobileNav");
+        openNav("mobileNav");
+    }
+    function openSeriesMobileNav() {
+        closeNav("mobileNav");
+        openNav("seriesMobileNav");
+    }
+    function closeNav(navId) {
+        var x = document.getElementById(navId);
+        x.className = x.className.replace(" w3-show", "");
+    }
+    function openNav(navId) {
+        var x = document.getElementById(navId);
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            closeNav(navId);
+        }
+    }
+    // When the user clicks on div, open the popup
+    function openPopup(id) {
+      var popup = document.getElementById(id);
+      popup.classList.toggle("show");
+    }
+</script>
+
+</body>
+
+</html>
